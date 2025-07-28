@@ -30,6 +30,7 @@ Raw Data -> Train Model -> Save Artifacts -> FastAPI (Loads Artifacts) <- Stream
 ```
 
 
+<img width="896" height="518" alt="Screenshot 2025-07-28 185747" src="https://github.com/user-attachments/assets/e1e5385b-159f-41a6-a9f9-37bc05054b0e" />
 
 ### 3\. Technology Stack
 
