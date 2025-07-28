@@ -28,7 +28,6 @@ The system consists of a training pipeline, a real-time prediction API, and a us
 ```
 Raw Data -> Train Model -> Save Artifacts -> FastAPI (Loads Artifacts) <- Streamlit UI
 ```
-<img width="896" height="518" alt="image" src="https://github.com/user-attachments/assets/7f4bcdfb-6a08-400a-bf43-b188c403a729" />
 
 
 
@@ -107,8 +106,11 @@ your-repo-name/
 3.  Input network traffic feature values into the form.
 4.  Click "Predict Attack" to receive an instant classification of the traffic as `Normal Traffic` or `ATTACK DETECTED!` (with attack type and confidence).
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/19dddacc-7b64-431f-b2fb-645e0e3dcded" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2c3df31c-67d4-4ab9-be36-1d641bee5e98" />
 
+
+<img width="1920" height="867" alt="Screenshot (77)" src="https://github.com/user-attachments/assets/b5b771cc-572e-4415-8bd4-50cc675f29b2" />
+
+<img width="1920" height="873" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/3946198a-87a6-47c8-8893-f302e5dd9381" />
 
 -----
+
