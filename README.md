@@ -1,29 +1,38 @@
-# Network-Intruder-detection-System
+# Network Intrusion Detection System (NIDS)
 
-Table of Contents
+[](https://www.google.com/search?q=https://github.com/hrishi3466/Network-Intruder-detection-System/blob/main/LICENSE) [](https://www.python.org/)
+[](https://fastapi.tiangolo.com/)
+[](https://streamlit.io/)
+
+-----
+
+### **Table of Contents**
 
 1.  [Introduction](https://www.google.com/search?q=%231-introduction)
 2.  [Architecture](https://www.google.com/search?q=%232-architecture)
 3.  [Technology Stack](https://www.google.com/search?q=%233-technology-stack)
 4.  [Setup & Run](https://www.google.com/search?q=%234-setup--run)
 5.  [Usage](https://www.google.com/search?q=%235-usage)
-6.  [License](https://www.google.com/search?q=%236-license)
+
 
 -----
 
-1. Introduction
+### 1\. Introduction
 
-This project develops an Intrusion Detection System (IDS) using Machine Learning to classify network traffic as `normal` or various `attack` types. It leverages the KDD Cup 99 dataset and features a Decision Tree Classifier for detection, a FastAPI backend for predictions, and a **Streamlit** web interface.
+This project develops an **Intrusion Detection System (IDS)** using Machine Learning to classify network traffic as `normal` or various `attack` types. It leverages the **KDD Cup 99 dataset** and features a **Decision Tree Classifier** for detection, a **FastAPI** backend for predictions, and a **Streamlit** web interface.
 
-2. Architecture
+### 2\. Architecture
 
 The system consists of a training pipeline, a real-time prediction API, and a user interface.
 
-
+```
 Raw Data -> Train Model -> Save Artifacts -> FastAPI (Loads Artifacts) <- Streamlit UI
+```
+<img width="896" height="518" alt="image" src="https://github.com/user-attachments/assets/7f4bcdfb-6a08-400a-bf43-b188c403a729" />
 
 
-3. Technology Stack
+
+### 3\. Technology Stack
 
   * **Model**: **Decision Tree Classifier** (chosen for its interpretability and robust classification on tabular data).
   * **Backend API**: **FastAPI** (for high-performance, easy-to-document RESTful predictions).
@@ -31,16 +40,16 @@ Raw Data -> Train Model -> Save Artifacts -> FastAPI (Loads Artifacts) <- Stream
   * **Data Processing**: Pandas, scikit-learn (Label Encoding, Min-Max Scaling, One-Hot Encoding).
   * **Serialization**: Joblib (for saving/loading models and transformers).
 
-4. Setup & Run
+### 4\. Setup & Run
 
 Follow these steps to get the project running locally.
 
-Prerequisites
+#### Prerequisites
 
   * Python 3.8+
   * pip
 
-Project Structure
+#### Project Structure
 
 ```
 your-repo-name/
@@ -56,7 +65,7 @@ your-repo-name/
 └── requirements.txt   # Python dependencies
 ```
 
-Installation
+#### Installation
 
 1.  **Clone the repository:**
     ```bash
@@ -91,9 +100,15 @@ Installation
     ```
     (Opens in your browser, usually `http://localhost:8501`)
 
-5. Usage
+### 5\. Usage
 
 1.  Ensure both the FastAPI backend (`predict.py`) and the Streamlit frontend (`streamlit_app.py`) are running.
 2.  Open your browser to the Streamlit application URL (e.g., `http://localhost:8501`).
 3.  Input network traffic feature values into the form.
 4.  Click "Predict Attack" to receive an instant classification of the traffic as `Normal Traffic` or `ATTACK DETECTED!` (with attack type and confidence).
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/19dddacc-7b64-431f-b2fb-645e0e3dcded" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2c3df31c-67d4-4ab9-be36-1d641bee5e98" />
+
+
+-----
