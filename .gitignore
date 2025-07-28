@@ -3,6 +3,33 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.egg-info/
+.pytest_cache/
+
+# Virtual Environment
+venv/
+.venv/
+
+# Data (UNCOMMENT if your data files are very large and you don't want to commit them)
+# data/
+
+# Models and other generated artifacts (IMPORTANT: UNCOMMENT this line)
+models/ # This will ignore the entire 'models' directory containing .pkl files.
+        # You should only commit the code that generates these models, not the models themselves.
+
+# Environment variables
+.env
+
+# Operating System files
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# IDE-specific files (e.g., VS Code)
+.vscode/
 # C extensions
 *.so
 

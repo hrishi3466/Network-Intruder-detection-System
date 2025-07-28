@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+joblib
+fastapi
+uvicorn
+python-multipart==0.0.9 # Required for FastAPI with certain Python versions
+streamlit
+requests
+pydantic
